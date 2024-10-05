@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color:hsl(30, 38%, 92%);
+    font-family: "Montserrat";
+    
+}
+
+p {
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container {
+    width: 600px;
+    height: auto;
+    border-radius: 10px;
+    display:flex;
+    background-color: white;
+    overflow: hidden;
+}
+
+picture {
+    height: 450px;
+    width: 300px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.product-details {
+    width: 300px;
+    height: 450px;
+}
+
+.content {
+    margin:32px auto auto 32px;
+
+}
+
+.product {
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+}
+
+.brand-name {
+    font-family: "Fraunces";
+    font-weight: 700;
+    line-height: 1;
+    margin-top: 27px;
+    color: hsl(212, 21%, 14%);
+}
+
+.description {
+    font-size: 14px;
+    margin-right: 40px;
+    line-height: 1.5;
+    margin-top: 27px;
+}
+
+.price-diff {
+    display: flex;
+    margin-top: 27px;
+    align-items: center;
+    gap: 15px;
+}
+
+.price-diff > h1 {
+    color:hsl(158, 36%, 37%);
+    font-family: "Fraunces";
+}
+
+.price-diff > p {
+    text-decoration: line-through;
+}
+
+.add-to-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+}
+
+.button {
+    width: 235px;
+    height: 48px;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: hsl(156, 38%, 23%);
+}
+
+@media (max-width:600px) {
+    .container {
+        width: 340px;
+        height: 610px;
+        background-color: white;
+        overflow: hidden;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    picture {
+        height:240px;
+        width:340px;
+        
+    }
+    
+    img {
+        object-fit: fill;
+    }
+
+    .product-details {
+        margin-top: 32px;
+        margin-bottom: 32px;
+    }
+
+    .content {
+        margin:0 auto;
+    }
+
+    .product, .brand-name, .description, .price-diff {
+        margin-bottom: -10px;
+
+    }
+
+    .button {
+        width: 100%;
+    }
+
+}
